@@ -1,2 +1,2 @@
 # snake
-Old, ~~good~~ awesome, Snake game.
+Old, ~~good~~ AWESOME, Snake game.
