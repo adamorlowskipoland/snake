@@ -12,17 +12,20 @@
     }
 
     #score {
-      text-align: center;
       font-size: 140px;
       font-family: 'Antic Slab', serif;
+    }
+
+    .center {
+      text-align: center;
     }
   </style>
 </head>
 <body>
-<div id="score">0</div>
-<canvas id="gameCanvas" width="300" height="300"></canvas>
-<div style="text-align: center">
-  <button id="startGame">START</button>
+<div class="center">
+  <p>Press ENTER to start</p>
+  <div id="score">0</div>
+  <canvas id="gameCanvas" width="300" height="300"></canvas>
 </div>
 
 <script src="script.js"></script>

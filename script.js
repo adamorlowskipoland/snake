@@ -37,7 +37,7 @@ document.addEventListener("keydown", changeDirection);
 clearCanvas();
 drawFood();
 drawSnake();
-document.addEventListener("click", () => main());
+document.addEventListener("keyup", (event) => event.keyCode === 13 ? main() : 0);
 
 /**
  * Main function of the game
