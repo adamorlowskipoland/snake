@@ -1,11 +1,11 @@
 const GAME_SPEED = 100;
-const CANVAS_BORDER_COLOUR = 'black';
-const CANVAS_BACKGROUND_COLOUR = "white";
-const SNAKE_COLOUR = 'lightgreen';
-const SNAKE_HEAD_COLOUR = 'tomato';
-const SNAKE_BORDER_COLOUR = 'darkgreen';
-const FOOD_COLOUR = 'red';
-const FOOD_BORDER_COLOUR = 'darkred';
+const CANVAS_BORDER_COLOUR = '#000';
+const CANVAS_BACKGROUND_COLOUR = "#fff";
+const SNAKE_COLOUR = '#98FB98';
+const SNAKE_HEAD_BORDER_COLOUR = '#006400';
+/*  Ferrari red ;-) */
+const FOOD_COLOUR = '#ff2800';
+const FOOD_BORDER_COLOUR = '#8b0000';
 
 // Get the canvas element
 const gameCanvas = document.getElementById("gameCanvas");
@@ -133,9 +133,9 @@ const view = {
   },
   drawSnakePart(snakePart) {
     // Set the colour of the snake part
-    ctx.fillStyle = snake.body.indexOf(snakePart) === 0 ? SNAKE_HEAD_COLOUR : SNAKE_COLOUR;
+    ctx.fillStyle = snake.body.indexOf(snakePart) === 0 ? SNAKE_HEAD_BORDER_COLOUR : SNAKE_COLOUR;
     // Set the border colour of the snake part
-    ctx.strokestyle = SNAKE_BORDER_COLOUR;
+    ctx.strokestyle = SNAKE_HEAD_BORDER_COLOUR;
     // Draw a "filled" rectangle to represent the snake part at the coordinates
     // the part is located
     ctx.fillRect(snakePart.x, snakePart.y, 10, 10);
