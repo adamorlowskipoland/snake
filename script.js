@@ -11,7 +11,7 @@ let snake = [
   { x: 130, y: 150 },
   { x: 120, y: 150 },
   { x: 110, y: 150 }
-]
+];
 // The user's score
 let score = 0;
 // When set to true the snake is changing direction
@@ -29,11 +29,15 @@ const gameCanvas = document.getElementById("gameCanvas");
 // Return a two dimensional drawing context
 const ctx = gameCanvas.getContext("2d");
 // Start game
-main();
 // Create the first food location
 createFood();
 // Call changeDirection whenever a key is pressed
 document.addEventListener("keydown", changeDirection);
+
+clearCanvas();
+drawFood();
+drawSnake();
+document.addEventListener("click", () => main());
 
 /**
  * Main function of the game
@@ -137,7 +141,7 @@ function createFood() {
   foodY = randomTen(0, gameCanvas.height - 10);
   // if the new food location is where the snake currently is, generate a new food location
   snake.forEach(function isFoodOnSnake(part) {
-    const foodIsoNsnake = part.x == foodX && part.y == foodY;
+    const foodIsoNsnake = part.x === foodX && part.y === foodY;
     if (foodIsoNsnake) createFood();
   });
 }
