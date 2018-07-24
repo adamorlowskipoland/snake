@@ -53,8 +53,8 @@ const operator = {
     food.y = this.randomTen(0, gameCanvas.height - 10);
     // if the new food location is where the snake currently is, generate a new food location
     snake.body.forEach(function isFoodOnSnake(part) {
-      const foodIsoNsnake = part.x === food.x && part.y === food.y;
-      if (foodIsoNsnake) this.createFood();
+      const foodIsOnSnake = part.x === food.x && part.y === food.y;
+      if (foodIsOnSnake) operator.createFood();
     });
   },
   advanceSnake() {
