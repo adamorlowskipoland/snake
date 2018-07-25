@@ -1,0 +1,31 @@
+{
+  "name": "awesome-snake",
+  "version": "1.0.0",
+  "description": "Try it out: https://goofy-murdock-316392.netlify.com/",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamorlowskipoland/snake.git"
+  },
+  "keywords": [
+    "snake"
+  ],
+  "author": "Adam Orlowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamorlowskipoland/snake/issues"
+  },
+  "homepage": "https://github.com/adamorlowskipoland/snake#readme",
+  "devDependencies": {
+    "babel-jest": "^23.4.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.2.0",
+    "jest": "^23.4.1",
+    "regenerator-runtime": "^0.12.0",
+    "babel-plugin-transform-runtime": "^6.23.0"
+  }
+}
